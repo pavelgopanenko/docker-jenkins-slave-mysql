@@ -1,4 +1,4 @@
-# PHP-нода для Jenkins
+# MySQL client для Jenkins
 
 Основана на [`csanchez/jenkins-swarm-slave`](https://registry.hub.docker.com/u/csanchez/jenkins-swarm-slave/)
 
@@ -6,6 +6,6 @@
 
 # Использование
 
-    docker run --rm --link jenkins:jenkins pavelgopanenko/jenkins-slave-php -username jenkins -password jenkins -executors 1
+    docker run --rm --link jenkins:jenkins pavelgopanenko/jenkins-slave-mysql -username jenkins -password jenkins -executors 1
 
 Прилинкованный контейнер `--link jenkins:jenkins` будет считаться мастером
